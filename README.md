@@ -28,8 +28,10 @@ Ecommerce Website used sale books by entrepreneur
 ![alt text](screenshots/checkout.png)
 6. Login:
 ![alt text](screenshots/login.png)
-6. Register:
+7. Register:
 ![alt text](screenshots/register.png)
+7. Email:
+![alt text](screenshots/email.png)
 
 
 
