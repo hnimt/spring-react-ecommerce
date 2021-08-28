@@ -14,7 +14,7 @@ const HeroSlider = () => {
                     <div className="col-lg-7 col-12">
                       <div className="hero-text">
                         <h1>
-                          <span>UP TO 50% OFF </span>Shirt For Man
+                          <span>UP TO 50% OFF </span>Book for Every
                         </h1>
                         <p>
                           Maboriosam in a nesciung eget magnae <br /> dapibus disting

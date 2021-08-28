@@ -83,7 +83,7 @@ const Header = () => {
                       <i className="ti-headphone-alt" /> +060 (800) 801-582
                     </li>
                     <li>
-                      <i className="ti-email" /> support@shophub.com
+                      <i className="ti-email" /> email@gmail.com
                     </li>
                   </ul>
                 </div>
