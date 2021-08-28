@@ -15,6 +15,76 @@ Ecommerce Website used sale books by entrepreneur
   - Redux, ReduxToolkit
 
 ---
+
+**Project Struture**
+1. Backend:
+.
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── minh
+│   │           └── Backend
+│   │               ├── config
+│   │               ├── constant
+│   │               ├── controller
+│   │               ├── dto
+│   │               │   ├── cart
+│   │               │   ├── cartitem
+│   │               │   ├── category
+│   │               │   ├── jwt
+│   │               │   ├── order
+│   │               │   ├── product
+│   │               │   └── user
+│   │               ├── entity
+│   │               │   ├── enums
+│   │               │   └── image
+│   │               ├── exception
+│   │               ├── filter
+│   │               ├── repository
+│   │               ├── service
+│   │               │   └── impl
+│   │               └── utility
+│   ├── resources
+│   │   └── templates
+│   └── upload
+│       └── static
+│           └── images
+│               ├── products
+│               │   ├── product1
+│               │   ├── product2
+│               │   ├── product3
+│               │   └── product4
+│               └── user
+│                   └── user1
+└── test
+    └── java
+        └── com
+            └── minh
+
+2. Frontend:
+.
+├── components
+│   └── common
+├── features
+│   ├── Auth
+│   │   ├── components
+│   │   └── pages
+│   ├── Cart
+│   │   └── components
+│   ├── Checkout
+│   │   └── components
+│   ├── Home
+│   │   └── components
+│   └── Products
+│       ├── components
+│       └── pages
+├── services
+│   ├── apis
+│   └── format
+└── store
+    └── slices
+
+---
 **Some Images from App**
 1. Screen Homepage:
 ![alt text](screenshots/home.png)
