@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail confirmation</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>Thank you <span th:text="${user.name}"></span> purchased our products</h3>
+    <p>Your information</p>
+    <table>
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.tel}"></td>
+            <td th:text="${user.address}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>Your order information</p>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Sub Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="orderDetail, iStat:${order.orderDetails}">
+            <th scope="row" th:text="${iStat.index} +1"></th>
+            <td th:text="${orderDetail.product.name}"></td>
+            <td th:text="${#numbers.formatInteger(orderDetail.product.price, 3, 'POINT')}"></td>
+            <td>
+                <span th:text="${orderDetail.quantity}"></span> &nbsp;
+            </td>
+            <td>
+                <span th:text="${#numbers.formatInteger(orderDetail.total, 3, 'POINT')}+ '$'"></span>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2">Raw Total</td>
+            <td th:text="${#numbers.formatInteger(order.subTotal, 3, 'POINT')}+ '$'"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2">Shipping</td>
+            <td th:text="${#numbers.formatInteger(+order.shipping, 3, 'POINT')}+ '$'"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2">VAT</td>
+            <td th:text="${#numbers.formatInteger(order.total, 3, 'POINT')}+ '$'"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <p>Thank you <span th:text="${user.name}">. Have a good time!</span></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.shop-home-list .add-cart {
+  background-color: orange;
+  color: white;
+}
+
+.shop-home-list .add-cart:hover {
+  background-color: black;
+  transition: 0.2s linear;
+}
+
+.shop-home-list .sale-price {
+  text-decoration: line-through;
+  margin-left: 20px;
+  color: gray;
+  font-size: 16px;
+}
+
+.my-quantity-form {
+  display: flex;
+}
+
+.my-quantity-form .btn-quantity {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-quantity-form .btn-quantity:hover {
+  background-color: orange;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.my-quantity-form .input-quantity {
+  height: 40px;
+  border: none;
+  width: 50px;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+input:focus {
+  outline: none;
+}
+
+.shopping-cart .qty .my-quantity-form{
+  display: flex;
+  justify-content: center;
+}
+
+.product-area .select-product select{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.product-area .pagination button {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.product-area .pagination button:hover {
+  color: orange;
+  transition: 0.2s linear;
+}
+.input_file{
+  line-height: 37px !important;
+  padding: 0 !important;
+}
