@@ -16,7 +16,7 @@ Ecommerce Website used sale books by entrepreneur
 
 ---
 
-**Project Struture**
+**Project Structure**
 1. Backend:
 
 ![alt text](screenshots/backend.png)
